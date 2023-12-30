@@ -1,0 +1,693 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕","malgun gothic",sans-serif;
+}
+body{
+    min-width: 320px;
+}
+
+
+/* =================header=============== */
+header{
+    width: 100%;
+    height: 80px;
+    border-bottom:1px solid #dde7e9;
+    background:#fff;
+}
+
+header .header_inner{
+    max-width: 1000px;
+    height: 80px;
+    margin:0 auto;
+}
+
+header .header_inner h1{
+    float:left;
+    margin-top:15px;
+}
+
+header .header_inner .gnb{
+    float:right;
+}
+
+header .header_inner .gnb li{
+    float:left;
+    padding-left:52px;
+}
+
+header .header_inner .gnb li a{
+    display: block;
+    color:#262626;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 80px;
+}
+/* ====================모바일버튼=================== */
+
+header .header_inner .m_btn{
+    display: none;
+}
+
+header .header_inner .m_gnb{
+    display: none;
+}
+/* ========================슬라이드======================== */
+main .visual .slick-slide img{
+    width: 100%;
+}
+
+main .visual .slick-prev{
+    position:absolute;
+    width: 25px;
+    height: 49px;
+    left:20px;
+    top:50%;
+    transform: translateY(-50%);
+    background:url("../images/btn_left.png")no-repeat;
+    z-index: 10;
+    text-indent: -10000px;
+}
+
+main .visual .slick-next{
+    position:absolute;
+    width: 25px;
+    height: 49px;
+    right:20px;
+    top:50%;
+    transform: translateY(-50%);
+    background:url("../images/btn_right.png")no-repeat;
+    z-index: 10;
+    text-indent: -10000px;
+}
+
+main .visual .slick-dots{
+    display: none;
+}
+
+/* ================== 검색버튼 ================== */
+
+main .search{
+    width: 100%;
+    height: 60px;
+    background:#ff8c97;
+    margin-top:-1.5px;
+}
+
+main .search .search_inner{
+    width: 1000px;
+    height: 60px;
+    margin:0 auto;
+}
+
+main .search .search_inner h2{
+    float:left;
+    margin-top:15px;
+    width: 15%;
+}
+
+main .search .search_inner .search_area{
+    float:left;
+    width: 39%;
+    margin-left:2%;
+}
+
+main .search .search_inner .search_area h2{
+    float:left;
+    margin-top:16px;
+}
+
+main .search .search_inner .search_area .area_wrap{
+    float:left;
+    width: 80%;
+    padding-top:8px;
+}
+
+main .search .search_inner .search_area .area_wrap select{
+    width: 150px;
+    height: 38px;
+    background:#fff url("../images/arrow_on.png") no-repeat 90% center;
+    border:none;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    text-indent: 5px;
+}
+
+main .search .search_inner .search_school{
+    float:right;
+    width: 43%;
+}
+main .search .search_inner .search_school h2{
+    margin-top:16px;
+    float:left;
+}
+
+main .search .search_inner .search_school .school_wrap{
+    float:left;
+    margin-top:8px;
+}
+
+main .search .search_inner .search_school .school_wrap input{
+    width: 238px;
+    height: 38px;
+    border:none;
+    outline: none;
+    background:#fff;
+    text-indent: 10px;
+}
+
+main .search .search_inner .search_school .school_wrap button{
+    width: 110px;
+    height: 38px;
+    background:#ffd57f;
+    font-weight: bold;
+    border:none;
+}
+
+
+/* =================== section1 =================== */
+main .section1{
+    max-width: 1000px;
+    margin:0 auto;
+    text-align: center;
+    margin:50px auto 0;
+    overflow: hidden;
+}
+
+main .section1 .box{
+    float:left;
+    width: 33.3%;
+}
+
+main .section1 .box img{
+    width: 100%;
+}
+
+main .section1 .box p{
+    color:#777;
+    margin-top:14px;
+    line-height: 22px;
+    font-size:15px;
+}
+
+
+/* =================== section2 ================= */
+main .section2{
+    max-width:1000px;
+    margin:85px auto 0px; 
+}
+
+main .section2 h2{
+    text-align: center;
+}
+
+main .section2 p{
+    font-size: 15px;
+    color:#777;
+    text-align: center;
+    margin-top:15px;
+    font-weight: 600;
+}
+
+main .section2 .model_list{
+    margin-top:35px;
+    overflow: hidden;
+}
+
+main .section2 .model_list li{
+    float:left;
+    width: 25%;
+
+}
+
+main .section2 .model_list li img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* ================== section3 ================== */
+main .section3{
+    max-width:1000px;
+    margin:110px auto 0;
+    overflow: hidden;
+}
+
+main .section3 h2{
+    text-align: center;
+    margin-bottom:20px;
+}
+
+main .section3 p{
+    text-align: center;
+    margin-bottom:25px;
+    color:#777;
+    font-size:15px;
+}
+
+main .section3 .notice{
+    float:left;
+    width: 30%;
+}
+main .section3>.notice>.slick-dots{
+    position:absolute;
+    right:0; top:20px;
+}
+
+main .section3>.notice>.slick-dots>li{
+    float:left;
+    margin-right:20px;
+}
+
+main .section3>.notice>.slick-dots>li>button{
+    text-indent: -10000px;
+    background:url("../images/btn_eventSlide_off.png") no-repeat;
+    width: 8px; height: 8px;
+    cursor: pointer;
+}
+
+main .section3>.notice>.slick-dots>.slick-active>button{
+    background:url("../images/btn_eventSlide_on.png") no-repeat;
+}
+
+
+main .section3 .video{
+    float:right;
+    width:68%;
+}
+
+main .section3 .video iframe{
+    width: 100%;
+    height: 406px;
+}
+
+
+/* ====================== section4 ====================== */
+
+main .section4{
+    max-width: 1000px;
+    border:2px solid #61c8f3;   
+    margin:20px auto 0;
+    overflow: hidden;
+}
+
+main .section4 h2{
+    padding:0 20px;
+    background:#61c8f3;
+    float:left;
+}
+
+main .section .sns_list{
+    float:right;
+}
+
+main .section4 .sns_list li{
+    float:left;
+    width: 12%;
+    margin-top:16px
+}
+
+main .section4 .sns_list li img{
+    width: 100%;
+}
+
+/* ================= footer ================= */
+footer{
+    width: 100%;
+    height: 133px;
+    margin:30px 0;
+    background:#f5f3f4;
+    position:relative;
+}
+
+footer .footer_inner{
+    width: 1000px;
+    height: 133px;
+    margin:0 auto;
+}
+
+footer .footer_inner .show{
+    display: none;
+}
+
+footer .footer_inner .util{
+    overflow: hidden;   
+    padding-top:20px; 
+}
+
+footer .footer_inner .util li{
+    float:left;
+    padding:0 10px;
+    position:relative;
+}
+
+footer .footer_inner .util li:before{
+    content:'';
+    width: 1px;
+    height: 12px;
+    background: #ccc;
+    position:absolute;
+    top:50%; left:0;
+    transform: translateY(-50%);
+}
+
+footer .footer_inner .util li:first-child:before{
+    display: none;
+}
+
+footer .footer_inner .util li:first-child{
+    padding-left:0px;
+}
+
+
+footer .footer_inner .util li a {
+    font-size:14px;
+    color:#222;
+    font-weight: bold;
+}
+
+footer .footer_inner address{
+    padding:17px 0px;
+    font-size:12px;
+    color:#888;
+    line-height: 20px;
+}
+
+footer .footer_inner .copy{
+    font-size:12px;
+    color:#888;
+    line-height: 18px;
+}
+
+footer .btn_top{
+    position:absolute;
+    right:2%; bottom:60px;
+}
+
+
+
+/* ------------------------- mobile ver -------------------------- */
+@media screen and ( max-width:767px ){
+    .cover{
+        position:fixed;
+        left:0; top:0;
+        width: 100%;
+        height: 100%;
+        background:rgba(0, 0, 0, 0.9);
+        z-index: 99;
+        display: none;
+    }
+
+    /* ====header==== */
+    header .header_inner{
+        width: 100%;
+        height: 60px;
+        text-align: center;
+        position:relative;
+    }
+
+    header .header_inner h1{
+        float:none;
+    }
+
+    header .header_inner .gnb{
+        display: none;
+    }
+
+    header .header_inner .m_btn{
+        display: block;
+        position:absolute;
+        left:20px; top:50%;
+        transform:translateY(-50%);
+        outline:none;
+    }
+
+                            /* ==== mobile menu ==== */
+
+    header .header_inner .m_gnb{
+        display:block;
+        width: 250px;
+        height: 100%;
+        background:#fff;
+        position:fixed;
+        left:-100%; top:0;
+        z-index:100;
+    }
+
+    header .header_inner .m_gnb img{
+        width: 100%;
+    }
+
+    header .header_inner .m_gnb .m_menu{
+
+    }
+
+    header .header_inner .m_gnb .m_menu li{
+        text-align: left;
+        height: 40px;
+        border-bottom: 1px #e2e2e2;
+        background:url("../images/m_menu_bg.png")no-repeat 12px 50%;
+        line-height: 40px;
+    }
+    header .header_inner .m_gnb .m_menu li h2{
+        width: 100%;
+        height: 100%;
+        margin-top:-2px;
+        text-indent: 10px;
+        background:#ff8c97;
+        color:#fff;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    header .header_inner .m_gnb .m_menu li a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        color:#757575;
+        margin-left:25px;
+        font-size:13px;
+    }
+
+    /* ==== mobile slick slide page button ==== */
+    main .visual{
+        position:relative;
+    }
+
+    main .visual .slick-dots{
+        position:absolute;
+        left:50%; bottom:10px;
+        transform: translateX(-50%);
+        cursor: pointer;
+    }
+
+    main .visual .slick-dots li{
+        float:left;
+        margin-right:15px;
+        text-indent:-10000px;
+        width: 18px; height: 18px;
+        background:url("../images/main_dots.png")no-repeat;
+        
+    }
+
+    main .visual .slick-dots li:last-child{
+        margin-right:0px;
+    }
+
+    main .visual .slick-dots .slick-active{
+        width: 18px; height: 18px;
+        background:url("../images/main_dots_1.png")no-repeat;
+    }
+
+    main .visual .slick-dots li button{
+
+    }
+
+    /* ==== mobile search ==== */
+    main .search{
+        width: 100%;
+        height: 120px;
+        padding:9px;
+        margin-top:-2px
+    }
+    
+    main .search .search_inner .search_store{
+        clear:both;
+        margin-top:0px;
+    }
+
+    main .search .search_inner .search_area h2{
+        width: 7%;
+        float:left;
+    }
+
+    main .search .search_inner .search_school h2{
+        width: 7%;
+    }
+
+    main .search .search_inner .search_area{
+        clear:both;
+        width: 100%;
+        margin-left:0px;
+    }
+
+    main .search .search_inner .search_school{
+        clear:both;
+        width: 100%;
+    }
+
+    main .search .search_inner .search_area .area_wrap select{
+        width: 23%
+    }
+
+    main .search .search_inner .search_school .school_wrap{
+        width: 478px;
+    }
+
+    main .search .search_inner .search_school .school_wrap input{
+        width: 53%;
+    }
+
+
+    /* ==== section1 ==== */
+    main .section1{
+        width: 100%;
+        margin-top:40px;
+    }
+
+    main .section1 .box{
+        width: 100%;
+        margin-bottom:15px;
+    }
+
+    main .section1 .box p{
+        display: none;
+    }
+
+    /* ==== section2 ==== */
+    main .section2{
+        width: 100%;
+        padding:8px;
+        margin-top:45px;
+    }
+
+    main .section2 h2 img{
+        width: 110px;
+        height: 25px;
+    }
+
+    main .section2 p{
+        display: none;
+    }
+
+    main .section2 .model_list{
+        margin-top:15px;
+    }
+
+    main .section2 .model_list li{
+        width: 50%;
+        height: 100%;
+    }
+
+    /* ==== section3 ==== */    
+    main .section3{
+        width: 100%;
+        margin-top:50px;
+    }
+
+    main .section3 p{
+        display: none;
+    }
+
+    main .section h2{
+        margin-bottom:10px;
+    }
+
+    main .section3 h2 img{
+        width: 170px; height: 38px;
+    }
+
+    main .section3 .notice{
+        width: 100%;
+        float:none;
+    }
+
+    main .section3 .notice img{
+        width: 100%;
+    }
+
+    main .section3 .video{
+        width: 100%;
+        float:none;
+        margin-top:10px;
+    }
+
+    /* ==== section4 ==== */
+    main .section4{
+        margin-top:15px;
+    }
+
+    main .section4 h2{
+        width: 100%;
+        padding-left:10px;
+        float:none;
+    }
+
+    main .section4 .sns_list{
+        margin-right:0px;
+        padding-right:0px;
+    }
+
+    main .section4 .sns_list li{
+        width: 33%;
+        padding:3% 0%;
+        margin-top:0px;
+        margin-right:1px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    /* ==== footer ==== */
+    footer{
+        width: 100%;
+        height: 175px;
+        text-align: center;
+    }
+
+    footer .footer_inner{
+        width: 100%;
+    }
+    
+    footer .footer_inner .util{
+        text-align: center;
+    }
+    
+    footer .footer_inner .util li{
+        display: inline-block;
+        float:none;
+    }
+
+    footer .footer_inner .util .hide{
+        display: none;
+    }
+
+    footer .btn_top{
+        display: none;
+    }
+
+    footer .footer_inner .show{
+        display: block;
+    }
+
+    footer .footer_inner .copy{
+        margin:-5px;
+    }
+}
+
+
+
+
+
+
+
+
